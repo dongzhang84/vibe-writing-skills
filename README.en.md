@@ -6,6 +6,14 @@ A Claude Code skill that engineers your personal writing workflow. AI handles fa
 
 Inspired by the article *Vibe Writing Era Has Arrived*: **the soul of the article is mine, the team is AI.**
 
+## The five elements of Vibe Writing
+
+<p align="center">
+  <img src="./assets/vibe-writing-5-elements.svg" alt="The five elements of Vibe Writing: four layers of authorial principles plus one engineering multiplier" width="680"/>
+</p>
+
+The bottom 4 layers (Originality, Personal Style, Framework First, Engineered Workflow) are **authorial principles**, none of which AI can replace. The 5th layer (Reusable Skill) is the **engineering multiplier**, packaging the first four into a one-command trigger. This repo is one public implementation of that 5th layer.
+
 ## What it is
 
 A reusable, append-only writing skill loaded via Claude Code's skill mechanism. Core design:

@@ -6,6 +6,14 @@
 
 灵感来自《兄弟们，真·Vibe Writing 时代到来了》这篇文章的核心理念：**文章的魂是作者的，团队是 AI 的**。
 
+## Vibe Writing 的五个要素
+
+<p align="center">
+  <img src="./assets/vibe-writing-5-elements.svg" alt="Vibe Writing 的五个要素：四层作者理念 + 一层工程放大器" width="680"/>
+</p>
+
+前 4 层（原创力、个人风格、框架先行、流程工程化）是**作者理念**，谁都替代不了。第 5 层（可复用 Skill）是**工程放大器**，把前四者打包成一键触发的模板。本 repo 就是这第 5 层的一份公开实现。
+
 ## 这是什么
 
 一套可复用、可追加的写作 skill，用 Claude Code 的 skill 机制加载。核心设计：
