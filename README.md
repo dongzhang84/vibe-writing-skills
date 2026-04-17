@@ -91,7 +91,7 @@ Claude 自动：
 - PDF 入库、AI 味检测 API
 - Memory JSON 数据库
 
-原因：单人博客的维护成本回本不了。想要完整工程化写作系统的可以参考 [AI-Vibe-Writing-Skills](https://github.com/kellen/AI-Vibe-Writing-Skills)。
+原因：单人博客的维护成本回本不了。想要完整工程化写作系统的可以参考 [AI-Vibe-Writing-Skills](https://github.com/donghuixin/AI-Vibe-Writing-Skills)。
 
 ## License
 
