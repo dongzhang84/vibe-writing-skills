@@ -1,5 +1,7 @@
 # Vibe Writing Skills
 
+**[English](./README.en.md) | 中文**
+
 把个人写作流程工程化的 Claude Code skill。AI 做查资料、核对、校对、引用整理；你只做选题、立论、判断、人设。
 
 灵感来自《兄弟们，真·Vibe Writing 时代到来了》这篇文章的核心理念：**文章的魂是作者的，团队是 AI 的**。
@@ -91,7 +93,7 @@ Claude 自动：
 - PDF 入库、AI 味检测 API
 - Memory JSON 数据库
 
-原因：单人博客的维护成本回本不了。想要完整工程化写作系统的可以参考 [AI-Vibe-Writing-Skills](https://github.com/donghuixin/AI-Vibe-Writing-Skills)。
+原因：单人博客的维护成本回本不了。
 
 ## License
 
