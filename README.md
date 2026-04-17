@@ -4,7 +4,7 @@
 
 把个人写作流程工程化的 Claude Code skill。AI 做查资料、核对、校对、引用整理；你只做选题、立论、判断、人设。
 
-灵感来自《兄弟们，真·Vibe Writing 时代到来了》这篇文章的核心理念：**文章的魂是作者的，团队是 AI 的**。
+灵感来自[《兄弟们，真·Vibe Writing 时代到来了》](https://github.com/dongzhang84/snowboat-blog/blob/main/%E5%85%84%E5%BC%9F%E4%BB%AC%EF%BC%8C%E7%9C%9F%C2%B7Vibe%20Writing%20%E6%97%B6%E4%BB%A3%E5%88%B0%E6%9D%A5%E4%BA%86.md)这篇文章的核心理念：**文章的魂是作者的，团队是 AI 的**。
 
 ## Vibe Writing 的五个要素
 

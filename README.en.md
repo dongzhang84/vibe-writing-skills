@@ -4,7 +4,7 @@
 
 A Claude Code skill that engineers your personal writing workflow. AI handles fact-checking, verification, proofreading, and citation management; you only own topic selection, thesis, judgment, and voice.
 
-Inspired by the article *Vibe Writing Era Has Arrived*: **the soul of the article is mine, the team is AI.**
+Inspired by the article [*兄弟们，真·Vibe Writing 时代到来了* (Vibe Writing Era Has Arrived, Chinese)](https://github.com/dongzhang84/snowboat-blog/blob/main/%E5%85%84%E5%BC%9F%E4%BB%AC%EF%BC%8C%E7%9C%9F%C2%B7Vibe%20Writing%20%E6%97%B6%E4%BB%A3%E5%88%B0%E6%9D%A5%E4%BA%86.md): **the soul of the article is mine, the team is AI.**
 
 ## The five elements of Vibe Writing
 
