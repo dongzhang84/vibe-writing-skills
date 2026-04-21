@@ -22,7 +22,7 @@ A reusable, append-only writing skill loaded via Claude Code's skill mechanism. 
 - **persona.md**: author identity (who you are, voice, hard rules)
 - **style.md**: language, paragraph length, number formatting, regional scope
 - **structure.md**: section numbering, case requirements, tables, conclusion standards
-- **error-log.md**: append-only mistake log. Every time you give feedback "don't do X again", append one entry. Next run, it's a hard constraint
+- **writing-rules.md**: append-only mistake log. Every time you give feedback "don't do X again", append one entry. Next run, it's a hard constraint
 - **output-format.md**: the three required sections at the end of every article (other articles / references / appendix of original draft)
 - **references/images.md**: priority list for image sources
 - **ARCHITECTURE.md**: engineering rationale and explicit non-goals
@@ -31,7 +31,7 @@ A reusable, append-only writing skill loaded via Claude Code's skill mechanism. 
 
 The old monolithic `SKILL.md` mixed flow, persona, style, error rules, and output format in one place. Once it grew past 500 lines, nobody could maintain it. After splitting:
 
-- Append a mistake rule → only touch `error-log.md`
+- Append a mistake rule → only touch `writing-rules.md`
 - Tweak author identity → only touch `persona.md`
 - Each file has a single responsibility, diffs are clean, files evolve independently
 
@@ -60,7 +60,7 @@ After installation, change at least these three files to make the skill yours:
 2. **`style.md`**: your language preferences, paragraph length, number formatting, regional scope
 3. **`structure.md`**: your section numbering convention, case requirements
 
-Don't pre-edit `error-log.md`. Every time Claude writes something you dislike, give short feedback and append one entry to this file. Future runs avoid the mistake automatically.
+Don't pre-edit `writing-rules.md`. Every time Claude writes something you dislike, give short feedback and append one entry to this file. Future runs avoid the mistake automatically.
 
 Edit `output-format.md` if you want different trailing sections (the default is "other articles / references / original-draft appendix").
 
@@ -72,15 +72,15 @@ You write a draft (.md file)
 /write-article <draft-path>
    ↓
 Claude automatically:
-  1. Loads config (persona / style / structure / error-log / output-format)
+  1. Loads config (persona / style / structure / writing-rules / output-format)
   2. Gathers material (reads your draft)
   3. Analyzes & plans (core thesis, section breakdown)
   4. Fact-checks (WebSearch for numbers, dates, names, events)
   5. Expands (fills the outline, following every config rule)
-  6. Self-audits (checks against error-log entry by entry)
+  6. Self-audits (checks against writing-rules entry by entry)
   7. Outputs (.md file + references + original-draft appendix)
    ↓
-You review → give feedback → append to error-log → next run is tighter
+You review → give feedback → append to writing-rules → next run is tighter
 ```
 
 ## Design principles

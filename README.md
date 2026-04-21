@@ -22,16 +22,16 @@
 - **persona.md**：作者人设（身份、写作底色、硬性规则）
 - **style.md**：语言、段落、数字、地域范围等风格规范
 - **structure.md**：章节编号、案例、表格、结论要求
-- **error-log.md**：错题本，append-only。每次反馈"别再 X"，追加一条，下次自动生效
+- **writing-rules.md**：写作规则，append-only。每次反馈"别再 X"，追加一条，下次自动生效
 - **output-format.md**：文章末尾的三节（作者其它文章 / 本文参考文献 / 附录：原始草稿）规范
 - **references/images.md**：配图来源优先级
 - **ARCHITECTURE.md**：整套设计的工程化方案和非目标
 
 ## 为什么这么拆
 
-过去所有规则塞在一个 `SKILL.md` 里，改错题和改人设纠缠在一起，文件滚到 500 行谁也维护不了。拆开之后：
+过去所有规则塞在一个 `SKILL.md` 里，改规则和改人设纠缠在一起，文件滚到 500 行谁也维护不了。拆开之后：
 
-- 改错题 → 只动 `error-log.md`
+- 改规则 → 只动 `writing-rules.md`
 - 改人设 → 只动 `persona.md`
 - 每个文件单一职责，diff 清晰，可独立演化
 
@@ -60,7 +60,7 @@ cp -R /path/to/vibe-writing-skills/* .claude/skills/write-article/
 2. **`style.md`**：你的语言偏好、段落长度、数字格式、地域范围
 3. **`structure.md`**：你的章节编号规范、案例要求
 
-`error-log.md` 不用预先改。每次 Claude 写错东西，你反馈一句"别再 X"，追加一条到这个文件，下次自动规避。
+`writing-rules.md` 不用预先改。每次 Claude 写错东西，你反馈一句"别再 X"，追加一条到这个文件，下次自动规避。
 
 `output-format.md` 视需要改文末三节（作者其它文章 / 本文参考文献 / 附录：原始草稿）的具体格式。
 
@@ -72,15 +72,15 @@ cp -R /path/to/vibe-writing-skills/* .claude/skills/write-article/
 /write-article <草稿路径>
    ↓
 Claude 自动：
-  1. 加载配置（persona / style / structure / error-log / output-format）
+  1. 加载配置（persona / style / structure / writing-rules / output-format）
   2. 收集素材（读你的草稿）
   3. 分析规划（定核心论点，划分章节）
   4. 事实核查（WebSearch 核对数字、时间、人名、事件）
   5. 扩写（按大纲补血肉，遵守所有配置文件的规则）
-  6. 自检（对照 error-log 逐条检查）
+  6. 自检（对照 writing-rules 逐条检查）
   7. 输出（.md 文件 + 参考文献 + 原始草稿附录）
    ↓
-你 review → 提反馈 → append 到 error-log → 下次更稳
+你 review → 提反馈 → append 到 writing-rules → 下次更稳
 ```
 
 ## 设计原则
@@ -89,8 +89,8 @@ Claude 自动：
 
 - **单一职责**：每个文件只管一件事
 - **显式导入**：SKILL.md 明确 Read 所有配套文件，不依赖隐式加载
-- **独立演化**：错题本高频变化，人设几乎不动，物理分离
-- **可追加优先**：错题本 append-only，降低写入阻力
+- **独立演化**：写作规则高频变化，人设几乎不动，物理分离
+- **可追加优先**：写作规则 append-only，降低写入阻力
 
 ## 不做什么
 
